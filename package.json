@@ -16,8 +16,9 @@
   "author": "",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "bypass": "github:slqntdevss/bypass",
     "@tomphttp/bare-server-node": "^2.0.0",
+    "bypass": "github:slqntdevss/bypass",
+    "dynamic": "github:slqntdevss/versatile",
     "express": "^4.18.2",
     "versatile": "github:slqntdevss/versatile-again"
   },
