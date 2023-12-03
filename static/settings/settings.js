@@ -65,3 +65,14 @@ alert("");\n\
   );
   location.replace("https://classroom.google.com");
 }
+function setTheme(theme) {
+  document.body.setAttribute("theme", theme)
+  localStorage.setItem("theme", theme)
+}
+const thing = document.getElementById("themeid");
+
+thing.addEventListener("change", function (e) {
+  let theme = e.target.value;
+  document.body.setAttribute('theme', theme)
+  localStorage.setItem("theme", theme);
+});

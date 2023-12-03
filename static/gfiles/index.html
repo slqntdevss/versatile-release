@@ -9,7 +9,7 @@
   <link href="/gfiles/apps.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <meta name="monetag" content="bc4bd39ec4c895d7b1e2967d46de92dc">
+    
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDGKNZHC53"></script>
 <script>
@@ -21,7 +21,7 @@
 </script>
 <style>
 </style>
-<body>
+<body theme="classic">
 	<div class="header">
 		<span onclick="location.href='/gfiles'" class="material-symbols-outlined">
 			sports_esports
@@ -395,108 +395,5 @@
 	})({})
 	</script>
 </body>
-<script>
-	var tab = localStorage.getItem("tab");
-if (tab) {
-  try {
-    var tabData = JSON.parse(tab);
-  } catch {
-    var tabData = {};
-  }
-} else {
-  var tabData = {};
-}
-if (tabData.title) {
-  document.getElementById("title").value = tabData.title;
-}
-if (tabData.icon) {
-  document.getElementById("icon").value = tabData.icon;
-}
-
-var settingsDefaultTab = {
-  title: "versatile",
-  icon: "./resources/img/icon.png",
-};
-
-function setTitle(title = "") {
-  if (title) {
-    document.title = title;
-  } else {
-    document.title = settingsDefaultTab.title;
-  }
-
-  var tab = localStorage.getItem("tab");
-  if (tab) {
-    try {
-      var tabData = JSON.parse(tab);
-    } catch {
-      var tabData = {};
-    }
-  } else {
-    var tabData = {};
-  }
-  if (title) {
-    tabData.title = title;
-  } else {
-    delete tabData.title;
-  }
-  localStorage.setItem("tab", JSON.stringify(tabData));
-}
-
-function setFavicon(icon) {
-  if (icon) {
-    document.querySelector("link[rel='icon']").href = icon;
-  } else {
-    document.querySelector("link[rel='icon']").href = settingsDefaultTab.icon;
-  }
-
-  var tab = localStorage.getItem("tab");
-  if (tab) {
-    try {
-      var tabData = JSON.parse(tab);
-    } catch {
-      var tabData = {};
-    }
-  } else {
-    var tabData = {};
-  }
-  if (icon) {
-    tabData.icon = icon;
-  } else {
-    delete tabData.icon;
-  }
-  localStorage.setItem("tab", JSON.stringify(tabData));
-}
-
-function resetTab() {
-  document.title = settingsDefaultTab.title;
-  document.querySelector("link[rel='icon']").href = settingsDefaultTab.icon;
-  document.getElementById("title").value = "";
-  document.getElementById("icon").value = "";
-  localStorage.setItem("tab", JSON.stringify({}));
-}
-
-function setTheme(theme) {
-  localStorage.setItem("theme", theme);
-  document.body.setAttribute("theme", theme);
-  document.body.style = '';
-  localStorage.removeItem('theme_color');
-
-  themes.forEach(palette => {
-    if (palette.theme == theme) {
-      document.querySelector('#theme_color').value = palette.color;
-    }
-  });
-}
-
-function setThemeColor(theme) {
-  localStorage.setItem('theme', 'custom');
-  localStorage.setItem('theme_color', theme);
-  document.body.setAttribute('theme', 'custom');
-  document.body.style = `--theme: ${theme}; --background: ${getContrastHex(theme)}; --text: ${getColorHex(theme)}; --text-secondary: ${getColorHex(theme)};`;
-}
-
-</script>
-<script src="resources/scripts/settings1.js"></script>
-<script src="resources/scripts/settings2.js"></script>
+<script src="../resources/scripts/index.js"></script>
 </html>

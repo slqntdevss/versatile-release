@@ -1,3 +1,4 @@
+@import url(css/themes.css);
 @font-face {
   font-family: psreg;
   src: url(fonts/psreg.ttf);
@@ -12,8 +13,8 @@ html {
   height: 100%;
 }
 body {
-  background-color: #080808;
-  color: white;
+  background-color: var(--background);
+  color: var(--color);
   font-family: "psreg";
   font-size: 16px;
   line-height: 1.5;
@@ -33,7 +34,7 @@ h1 {
   font-family: "psbold";
   font-size: 72px;
   margin: 0 0 -43px 0;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+  text-shadow: var(--text-shadow);
   pointer-events: none;
 }
 .center {
@@ -44,18 +45,41 @@ h1 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+select {
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+  color: var(--color);
+  background-color: var(--background);
+  border-color: var(--color);
+  width: 125px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: "psreg";
+  font-size: 18px;
+  transition-timing-function: ease-in-out;
+  transition: 1s;
+}
+select:hover {
+  width: 150px;
+  box-shadow: var(--box-shadow-semi);
+}
+select:focus {
+  width: 175px;
+  box-shadow: var(--box-shadow);
+}
 .btn {
-  border: #ffffff;
-  color: #ffffff;
+  border: var(--background);
+  color: var(--color);
   position: absolute;
-  border-radius: 15px;
+  border-radius: 5px;
+  border-color: var(--color);
+  border-width: 2px;
   border-style: solid;
   top: 65%;
   width: auto;
   margin: auto;
   font-family: "psreg";
   font-size: 16px;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+  box-shadow: var(--box-shadow);
   height: 25px;
   position: relative;
   cursor: pointer;
@@ -86,17 +110,17 @@ form {
   font-size: 48px;
   margin: 10px;
   cursor: pointer;
-  text-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
+  text-shadow: var(--text-shadow);
 }
 .uvform {
   top: 2%;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
   position: absolute;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-in-out;
   transition: 1.5s;
-  background-color: #000000bf;
-  border: 1px solid rgba(255, 255, 255, 0.719);
-  color: #ffffff;
+  background-color: var(--background);
+  border: 1px solid var(--color);
+  color: var(--color);
   font-size: 24px;
   border-radius: 9px;
   margin: 0 0 16px 0;
@@ -108,15 +132,15 @@ form {
   outline: transparent;
 }
 .uvform:placeholder {
-  color: #ffffff;
+  color: var(--color);
 }
 .uvform:hover {
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-in-out;
   transition: 1s;
   width: 57.5%;
 }
 .uvform:focus {
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-in-out;
   transition: 1s;
   width: 65%;
 }
@@ -195,7 +219,7 @@ canvas {
   bottom: 0px;
   right: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: var(--background);
   z-index: 10;
 }
 .modal-body:before {
@@ -264,7 +288,7 @@ canvas {
 }
 
 .js-close-modal:hover {
-  color: #000;
+  color: var(--background);
 }
 
 #settings-version {

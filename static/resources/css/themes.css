@@ -1,0 +1,27 @@
+body[theme="classic"] {
+    --background: black;
+    --color: white;
+    --text-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+    --box-shadow-semi: 0 0 10px rgba(255, 255, 255, 0.7);
+    --box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+}
+body[theme="cottoncandy"] {
+    --background: #80eaff;
+    --color: #E8B2EE;
+    --text-shadow: 0 0 30px rgba(232, 178, 238, 0.7);
+    --box-shadow-semi: 0 0 10px rgba(232, 178, 238, 0.7);
+    --box-shadow: 0 0 30px rgba(232, 178, 238, 0.7);
+}body[theme="midnight"] {
+    --background: rgb(11, 36, 75);
+    --color: white;
+    --text-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+    --box-shadow-semi: 0 0 10px rgba(255, 255, 255, 0.7);
+    --box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+}
+body[theme="light"] {
+    --background: #ffffff;
+    --color: black;
+    --text-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    --box-shadow-semi: 0 0 10px rgba(0, 0, 0, 0.7);
+    --box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
