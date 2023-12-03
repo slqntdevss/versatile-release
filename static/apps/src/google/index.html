@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="../resources/style.css">
+    <style>
+		@font-face {
+  font-family: psreg;
+  src: url(/resources/fonts/psreg.ttf);
+}
+
+@font-face {
+  font-family: psbold;
+  src: url(/resources/fonts/psbold.ttf);
+}h1 {
+	font-family: "psreg";
+	color: white;
+  font-size: 48px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+	.btn {
+		font-family: "psreg";
+		border-color: white;
+		color: white;
+		border-radius: 15px;
+		margin-top: 10px;
+		background: transparent;
+		text-align: center;
+		width: auto;
+		height: 30px;
+		border-style: solid;
+		-webkit-transition: 0.5s all ease;
+		transition: 0.5s ease all;
+	}
+	.btn:hover {
+		cursor: pointer;
+	}
+	
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1>Google</h1>
+        <button class="btn" onclick="location.href = __uv$config.prefix + __uv$config.encodeUrl('https://google.com');">Open App</button>
+    </div>
+</body>
+    <script src="/uv/uv.bundle.js" defer></script>
+    <script src="/uv/uv.config.js" defer></script>
+    <script src="/index.js" defer></script>
+</html>

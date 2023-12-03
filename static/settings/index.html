@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>versatile</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="/resources/img/icon.png">
+	<link rel="stylesheet" href="/resources/style.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+		<meta name="monetag" content="bc4bd39ec4c895d7b1e2967d46de92dc">
+		<script src="/resources/scripts/ad.js"></script>
+		<script src="/resources/scripts/ad2.js"></script>
+</head>
+<style>
+	.input {
+		color: white;
+		border-radius: 15px;
+		margin-top: 10px;
+		background: transparent;
+		text-align: center;
+		width: auto;
+		height: 30px;
+		border-style: solid;
+		-webkit-transition: 0.5s all ease;
+		transition: 0.5s ease all;
+}
+.input:hover {
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+		cursor: text;
+}
+.input:focus {
+	border-color: white;
+	box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+}
+
+	.btn {
+		border-radius: 15px;
+		margin-top: 10px;
+		background: transparent;
+		text-align: center;
+		width: auto;
+		height: 30px;
+		border-style: solid;
+		-webkit-transition: 0.5s all ease;
+		transition: 0.5s ease all;
+	}
+
+
+	.btn:hover {
+		cursor: pointer;
+	}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDGKNZHC53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VDGKNZHC53');
+</script>
+<body>
+	<div class="header">
+		<span onclick="location.href='/gfiles'" class="material-symbols-outlined">
+			sports_esports
+			</span>
+			<span onclick="location.href='/settings'" class="material-symbols-outlined">
+				settings
+				</span>
+				  <span onclick="location.href='/apps'" class="material-symbols-outlined">
+          apps
+          </span>
+	</div>
+	<a href="/">
+	<img src="/resources/img/icon.png" class="logo">
+	</img>
+	</a>
+	<div class="center">
+	<h1>cloaking:</h1>
+	<br>
+	<br>
+	<div class="buttons">
+		<input id="title" class="input" placeholder="Title" onkeyup="setTitle(this.value)">
+		<input id="icon" class="input" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())">
+		<button class="btn" onclick="resetTab()">Reset</button>
+	  </div>
+	  <h1>about:blank setter</h1>
+		<br>
+		<br>
+		<button class="btn" onclick="ab()">advanced cloak</button>
+		<button class="btn" onclick="buffedAB()">even more advanced cloak</button>
+	  </div>
+</body>
+<script src="/settings/settings.js"></script>
+<script src="/resources/scripts/settings1.js"></script>
+<script src="/resources/scripts/settings2.js"></script>
+</html>
