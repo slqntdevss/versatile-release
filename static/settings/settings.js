@@ -69,10 +69,15 @@ function setTheme(theme) {
   document.body.setAttribute("theme", theme)
   localStorage.setItem("theme", theme)
 }
-const thing = document.getElementById("themeid");
 
-thing.addEventListener("change", function (e) {
+const themepicker = document.getElementById("themepicker");
+
+themepicker.addEventListener("change", function (e) {
   let theme = e.target.value;
   document.body.setAttribute('theme', theme)
   localStorage.setItem("theme", theme);
 });
+
+if (localStorage.getItem("theme")) {
+  document.body.setAttribute("theme", localStorage.getItem("theme"))
+}
