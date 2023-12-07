@@ -38,6 +38,7 @@ h1 {
   pointer-events: none;
 }
 .center {
+  padding-top: 15px;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -110,7 +111,6 @@ form {
   font-size: 48px;
   margin: 10px;
   cursor: pointer;
-  text-shadow: var(--text-shadow);
 }
 .uvform {
   top: 2%;

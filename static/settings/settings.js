@@ -65,6 +65,11 @@ alert("");\n\
   );
   location.replace("https://classroom.google.com");
 }
+function setPanicURL() {
+  var url = document.querySelector('#panicurl')
+  localStorage.setItem("panicurl", url.value)
+}
+/*
 function setTheme(theme) {
   document.body.setAttribute("theme", theme)
   localStorage.setItem("theme", theme)
@@ -80,4 +85,4 @@ themepicker.addEventListener("change", function (e) {
 
 if (localStorage.getItem("theme")) {
   document.body.setAttribute("theme", localStorage.getItem("theme"))
-}
+}*/
