@@ -13,6 +13,9 @@ you can either make an issue on the repo or send it in our discord server.
 # credits
 
 slqnt (me): lead dev and founder
+
 jordan: 2nd lead and helping with games.
+
 peak: hosting and ads
+
 you: for choosing versatile. ty!
