@@ -13,7 +13,7 @@ html {
   height: 100%;
 }
 body {
-  background-color: var(--background);
+  background: var(--background);
   color: var(--color);
   font-family: "psreg";
   font-size: 16px;
@@ -51,27 +51,34 @@ select {
   color: var(--color);
   background-color: var(--background);
   border-color: var(--color);
-  width: 125px;
+  width: 150px;
   height: 30px;
-  border-radius: 5px;
+  border-style: solid;
+  border-radius: 8px;
   font-family: "psreg";
   font-size: 18px;
   transition-timing-function: ease-in-out;
   transition: 1s;
 }
+option {
+  font-family: "psreg";
+  color: var(--color);
+  background-color: var(--background-solo);
+  border-color: var(--background-solo);
+  border-width: 1px;
+  filter: blur(7px);
+}
 select:hover {
-  width: 150px;
   box-shadow: var(--box-shadow-semi);
 }
 select:focus {
-  width: 175px;
   box-shadow: var(--box-shadow);
 }
 .btn {
   border: var(--background);
   color: var(--color);
   position: absolute;
-  border-radius: 5px;
+  border-radius: 8px;
   border-color: var(--color);
   border-width: 2px;
   border-style: solid;
@@ -114,7 +121,7 @@ form {
 }
 .uvform {
   top: 2%;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+  box-shadow: var(--box-shadow);
   position: absolute;
   transition-timing-function: ease-in-out;
   transition: 1.5s;

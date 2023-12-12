@@ -69,7 +69,7 @@ function setPanicURL() {
   var url = document.querySelector('#panicurl')
   localStorage.setItem("panicurl", url.value)
 }
-/*
+
 function setTheme(theme) {
   document.body.setAttribute("theme", theme)
   localStorage.setItem("theme", theme)
@@ -79,10 +79,11 @@ const themepicker = document.getElementById("themepicker");
 
 themepicker.addEventListener("change", function (e) {
   let theme = e.target.value;
+  if(theme != "select") {
   document.body.setAttribute('theme', theme)
   localStorage.setItem("theme", theme);
-});
+}});
 
 if (localStorage.getItem("theme")) {
   document.body.setAttribute("theme", localStorage.getItem("theme"))
-}*/
+}
