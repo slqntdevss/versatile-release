@@ -189,7 +189,7 @@
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const file = urlParams.get('file');
-    document.getElementById('urlhandler').src = "/versat/" + file
+    document.getElementById('urlhandler').src = window.location.host + "/versat/" + file
     
     </script>
      <script src="/resources/scripts/ad.js"></script>
