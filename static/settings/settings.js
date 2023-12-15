@@ -9,7 +9,7 @@ function ab() {
     let c = open("about:blank", "_blank");
     if (!c || c.closed)
       alert(
-        "Allow popups and redirects to hide this from showing up in your history.\nThanks!JMW",
+        "Allow popups and redirects to hide this from showing up in your history.\nThanks!",
       );
     else {
       let b = c.document,
