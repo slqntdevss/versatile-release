@@ -63,14 +63,7 @@
       background-color: gray;
     }
 
-  #webcontainer {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-#webcontainer iframe {
+#urlhandler {
   width: 100%;
   height: 100%;
   border: none;
@@ -187,7 +180,7 @@
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const url = urlParams.get('url');
-    document.getElementById('urlhandler').src = window.location.host + "/versat/" + url
+    document.getElementById('urlhandler').src = "https:/" + window.location.host + "/versat/" + url
     
     </script>
      <script src="/resources/scripts/ad.js"></script>
