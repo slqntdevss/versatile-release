@@ -183,13 +183,11 @@
   <header>
     <a href="/" class="back-button">&larr; Back</a>
   </header>
-  <div id="webcontainer">
     <iframe id="urlhandler"></iframe>
-  </div>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
-    const file = urlParams.get('file');
-    document.getElementById('urlhandler').src = window.location.host + "/versat/" + file
+    const url = urlParams.get('url');
+    document.getElementById('urlhandler').src = window.location.host + "/versat/" + url
     
     </script>
      <script src="/resources/scripts/ad.js"></script>
