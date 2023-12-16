@@ -71,7 +71,7 @@
 
 #urlhandler {
   width: 100%;
-  height: 100%;
+  height: 800px;
   border: none;
   margin-bottom: 0px;
 }
@@ -174,7 +174,6 @@
 }
   </style>
   <script src="/resources/scripts/ad.js"></script>
-  <script src="/resources/scripts/ad2.js"></script>
   
 </head>
 
@@ -183,12 +182,6 @@
     <a href="/" class="back-button">&larr; Back</a>
   </header>
     <iframe id="urlhandler"></iframe>
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const url = urlParams.get('url');
-    document.getElementById('urlhandler').src = "https:/" + window.location.host + "/versat/" + url
-    
-    </script>
      <script src="/resources/scripts/ad.js"></script>
      <script>
       (function(ldmn){
@@ -202,5 +195,6 @@
       })({})
       </script>
 </body>
-<script src="../resources/scripts/index.js"></script>
+<script src="resources/scripts/index.js"></script>
+<script src="resources/scripts/search.js"></script>
 </html>
