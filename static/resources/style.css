@@ -120,7 +120,7 @@ form {
   cursor: pointer;
 }
 .uvform {
-  top: 2%;
+  top: -5%;
   box-shadow: var(--box-shadow);
   position: absolute;
   transition-timing-function: ease-in-out;
@@ -151,11 +151,13 @@ form {
   transition-timing-function: ease-in-out;
   transition: 1s;
   width: 57.5%;
+  top: 2%;
 }
 .uvform:focus {
   transition-timing-function: ease-in-out;
   transition: 1s;
   width: 65%;
+  top: 2%;
 }
 svg {
   position: absolute;

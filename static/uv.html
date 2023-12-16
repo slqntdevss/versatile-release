@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>versatile</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="resources/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="/resources/img/icon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
@@ -39,37 +39,20 @@
     .back-button {
       position: fixed;
       top: 1rem;
-      left: 1rem;
+      left: -3%;
       background-color: white;
       color: black;
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
       font-size: 1.2rem;
       text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .fullscreen {
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      background-color: white;
-      color: black;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      font-size: 1.2rem;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-
-    fullscreen:hover {
-      background-color: gray;
+      transition: 0.7s ease;
     }
     .back-button:hover {
       background-color: gray;
+      left: 1rem;
     }
-
+    
 #urlhandler {
   border: none;
   margin-bottom: 0px;
@@ -189,7 +172,7 @@
     />
     <input class="uvform" id="uv-address" type="text" placeholder="explore the web" />
     </form>
-    <iframe id="urlhandler" width="100%" height="86%"></iframe>
+    <iframe id="urlhandler" width="100%" height="100%"></iframe>
      <script src="/resources/scripts/ad.js"></script>
      <script>
       (function(ldmn){
