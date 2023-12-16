@@ -8,10 +8,11 @@
   <title>versatile</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="resources/style.css">
 	<link rel="icon" type="image/x-icon" href="/resources/img/icon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src="uv/uv.bundle.js" defer></script>
-  <script src="uv/uv.config.js" defer></script>
+  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+    <script src="/uv/uv.config.js"></script>
   <script src="register-sw.js" defer></script>
   <script src="search.js" defer></script>
   <script src="index.js" defer></script>
@@ -70,8 +71,6 @@
     }
 
 #urlhandler {
-  width: 100%;
-  height: 800px;
   border: none;
   margin-bottom: 0px;
 }
@@ -181,7 +180,16 @@
   <header>
     <a href="/" class="back-button">&larr; Back</a>
   </header>
-    <iframe id="urlhandler"></iframe>
+  <form id="uv-form" class="flex-center">
+    <input
+      class="uvform"
+      id="uv-search-engine"
+      value="https://www.google.com/search?q=%s"
+      type="hidden"
+    />
+    <input class="uvform" id="uv-address" type="text" placeholder="explore the web" />
+    </form>
+    <iframe id="urlhandler" width="100%" height="86%"></iframe>
      <script src="/resources/scripts/ad.js"></script>
      <script>
       (function(ldmn){

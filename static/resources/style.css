@@ -138,6 +138,12 @@ form {
   width: 50%;
   outline: transparent;
 }
+#frame {
+  width: 75%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+}
 .uvform:placeholder {
   color: var(--color);
 }
