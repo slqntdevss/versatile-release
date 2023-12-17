@@ -7,15 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>versatile</title>
 	<meta charset="UTF-8">
-  <link rel="stylesheet" href="resources/style.css">
+  <link rel="stylesheet" href="../resources/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="/resources/img/icon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src="/mathhelp/bundle.js" charset="UTF-8"></script>
-    <script src="/mathhelp/config.js"></script>
-  <script src="register-sw.js" defer></script>
-  <script src="search.js" defer></script>
-  <script src="index.js" defer></script>
+  <script src="../mathhelp/bundle.js" charset="UTF-8"></script>
+    <script src="../mathhelp/config.js"></script>
+  <script src="../index.js" defer></script>
 </head>
   <style>
     @font-face {
@@ -186,6 +184,8 @@
       })({})
       </script>
 </body>
-<script src="resources/scripts/index.js"></script>
-<script src="resources/scripts/search.js"></script>
+<script>
+  document.getElementById('urlhandler').src = sessionStorage.getItem("url");
+</script>
+<script src="../resources/scripts/index.js"></script>
 </html>
