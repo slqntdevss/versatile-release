@@ -144,7 +144,7 @@ form {
   border-radius: 10px;
   background-color: white;
 }
-.uvform:placeholder {
+.uvform::placeholder {
   color: var(--color);
 }
 .uvform:hover {
