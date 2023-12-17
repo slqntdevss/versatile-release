@@ -9,7 +9,8 @@ form.addEventListener("submit", async (event) => {
     })
     .then(() => {
       let url = input.value.trim();
-      if (!isUrl(url)) url = "https://www.google.com/search?q=" + url;
+      let browser = localStorage.getItem("browser") || "https://google.com/search?q=";
+      if (!isUrl(url)) url = browser + url;
       else if (!(url.startsWith("https://") || url.startsWith("http://")))
         url = "http://" + url;
       sessionStorage.setItem("url", __uv$config.encodeUrl(url));

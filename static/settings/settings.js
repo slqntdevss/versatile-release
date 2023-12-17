@@ -87,3 +87,10 @@ themepicker.addEventListener("change", function (e) {
 if (localStorage.getItem("theme")) {
   document.body.setAttribute("theme", localStorage.getItem("theme"))
 }
+const browserpicker = document.getElementById("browserpicker");
+
+browserpicker.addEventListener("change", function (e) {
+  let browser = e.target.value;
+  if(browser != "select") {
+  localStorage.setItem("browser", theme);
+}});
