@@ -63,18 +63,10 @@
       background-color: gray;
     }
 
-  #game-container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 780px;
-}
-
-#game-container iframe {
-  width: 100%;
-  height: 100%;
+#gameFramey {
   border: none;
   margin-bottom: 0px;
+  width: 100%;
 }
 
 #server-buttons {
@@ -181,9 +173,7 @@
   <header>
     <a href="/gfiles" class="back-button">&larr; Back</a>
   </header>
-  <div id="game-container">
-    <iframe id="gameFramey"></iframe>
-  </div>
+  <iframe id="gameFramey" height="800px"></iframe>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const file = urlParams.get('file');
@@ -194,6 +184,7 @@
       document.getElementById('gameFramey').src = "/gfiles/src/" + file
     }
     </script>
+    
      <script src="/resources/scripts/ad.js"></script>
      <script>
       (function(ldmn){

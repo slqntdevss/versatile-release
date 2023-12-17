@@ -4,7 +4,7 @@ const input = document.querySelector("input");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   window.navigator.serviceWorker
-    .register("./sw.js", {
+    .register("/sw.js", {
       scope: __uv$config.prefix,
     })
     .then(() => {
@@ -13,6 +13,11 @@ form.addEventListener("submit", async (event) => {
       else if (!(url.startsWith("https://") || url.startsWith("http://")))
         url = "http://" + url;
       sessionStorage.setItem("url", __uv$config.encodeUrl(url));
+      console.log(sessionStorage.getItem("url"));
       location.href = "/go";
     });
 });
+function isUrl(val = ''){
+  if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
+  return false;
+};

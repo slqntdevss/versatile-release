@@ -1,6 +1,6 @@
-importScripts("/mathhelp/bundle.js");
-importScripts("/mathhelp/config.js");
-importScripts("/mathhelp/sw.js");
+importScripts("mathhelp/bundle.js");
+importScripts("mathhelp/config.js");
+importScripts("mathhelp/sw.js");
 
 const sw = new UVServiceWorker();
 let userKey = new URL(location).searchParams.get('userkey');

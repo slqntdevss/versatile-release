@@ -160,12 +160,6 @@
     <a href="/" class="back-button">&larr; Back</a>
   </header>
   <form id="uv-form" class="flex-center">
-    <input
-      class="uvform"
-      id="uv-search-engine"
-      value="https://www.google.com/search?q=%s"
-      type="hidden"
-    />
     <input class="uvform" id="uv-address" type="text" placeholder="explore the web" />
     </form>
     <iframe id="urlhandler" width="100%" height="100%"></iframe>
@@ -184,7 +178,7 @@
       <script>
         window.onload = function() {
                   let url = sessionStorage.getItem("url");
-                  url = "/reviews/" + url;
+                  url = "/versat/" + url;
                   console.log(url);
                   document.querySelector("#urlhandler").src = url;
                   let iframe = document.querySelector("#urlhandler");

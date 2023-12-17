@@ -1,5 +1,5 @@
-importScripts('/contact/bundle.js');
-importScripts('/contact/config.js');
+importScripts('/mathhelp/bundle.js');
+importScripts('/mathhelp/config.js');
 
 class UVServiceWorker extends EventEmitter {   
     constructor(config = __uv$config) {
