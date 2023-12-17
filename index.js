@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 
 const publicPath = fileURLToPath(new URL("./static/", import.meta.url));
 
-const bare = createBareServer("/bare/");
+const bare = createBareServer("/contactus/");
 const app = express();
 
 app.use(express.static(publicPath));
