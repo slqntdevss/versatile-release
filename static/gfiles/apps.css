@@ -25,8 +25,8 @@
 
 .apps-card:hover {
   transform: rotate(-5deg) scale(1.15);
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
-  border-color: #ffffff;
+  box-shadow: var(--box-shadow);
+  border-color: var(--color);
 }
 
 .apps-card img {

@@ -9,7 +9,12 @@ form.addEventListener("submit", async (event) => {
     })
     .then(() => {
       let url = input.value.trim();
-      let browser = localStorage.getItem("browser") || "https://google.com/search?q=";
+      let browser = localStorage.getItem("browser");
+
+      if(browser == null) {
+        localStorage.setItem("browser", "https://google.com/search?q=")
+      }
+
       if (!isUrl(url)) url = browser + url;
       else if (!(url.startsWith("https://") || url.startsWith("http://")))
         url = "http://" + url;
