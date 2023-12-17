@@ -185,7 +185,14 @@
       </script>
 </body>
 <script>
-  document.getElementById('urlhandler').src = sessionStorage.getItem("url");
+  window.onload = function() {
+            let url = sessionStorage.getItem("url");
+            url = "/reviews/" + url;
+            console.log(url);
+            document.querySelector("#urlhandler").src = url;
+            let iframe = document.querySelector("#urlhandler");
+            iframe.src = url;
+        };
 </script>
 <script src="../resources/scripts/index.js"></script>
 </html>
