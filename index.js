@@ -1,7 +1,6 @@
 import { createBareServer } from '@tomphttp/bare-server-node';
 import express from "express";
 import { createServer } from "node:http";
-import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import { join } from "node:path";
 import { hostname } from "node:os";
 import { fileURLToPath } from "url";
@@ -12,7 +11,6 @@ const bare = createBareServer("/bare/");
 const app = express();
 
 app.use(express.static(publicPath));
-app.use("/uv/", express.static(uvPath));
 
 const server = createServer();
 

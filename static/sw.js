@@ -1,6 +1,6 @@
-importScripts('/uv/uv.bundle.js');
-importScripts('/uv/uv.config.js');
-importScripts(__uv$config.sw || '/uv/uv.sw.js');
+importScripts('/mathhelp/bundle.js');
+importScripts('/mathhelp/config.js');
+importScripts(__uv$config.sw || '/mathhelp/sw.js');
 
 const sw = new UVServiceWorker();
 
