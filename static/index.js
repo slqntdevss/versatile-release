@@ -1,5 +1,10 @@
+const browser = localStorage.getItem("browser");
 const form = document.querySelector("form");
 const input = document.querySelector("input");
+
+if(browser == null) {
+  localStorage.setItem("browser", "https://google.com/search?q=")
+}
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -9,12 +14,6 @@ form.addEventListener("submit", async (event) => {
     })
     .then(() => {
       let url = input.value.trim();
-      let browser = localStorage.getItem("browser");
-
-      if(browser == null) {
-        localStorage.setItem("browser", "https://google.com/search?q=")
-      }
-
       if (!isUrl(url)) url = browser + url;
       else if (!(url.startsWith("https://") || url.startsWith("http://")))
         url = "http://" + url;
