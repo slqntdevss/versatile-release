@@ -11,9 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="/resources/img/icon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src="../mathhelp/bundle.js" charset="UTF-8"></script>
-    <script src="../mathhelp/config.js"></script>
-  <script src="../index.js" defer></script>
+ 
 </head>
   <style>
     @font-face {
@@ -183,16 +181,19 @@
       l.parentNode.insertBefore(s, l);
       })({})
       </script>
+      <script>
+        window.onload = function() {
+                  let url = sessionStorage.getItem("url");
+                  url = "/reviews/" + url;
+                  console.log(url);
+                  document.querySelector("#urlhandler").src = url;
+                  let iframe = document.querySelector("#urlhandler");
+                  iframe.src = url;
+              };
+      </script>
+       <script src="../mathhelp/bundle.js" charset="UTF-8"></script>
+       <script src="../mathhelp/config.js"></script>
+     <script src="../index.js" defer></script>
 </body>
-<script>
-  window.onload = function() {
-            let url = sessionStorage.getItem("url");
-            url = "/reviews/" + url;
-            console.log(url);
-            document.querySelector("#urlhandler").src = url;
-            let iframe = document.querySelector("#urlhandler");
-            iframe.src = url;
-        };
-</script>
 <script src="../resources/scripts/index.js"></script>
 </html>
