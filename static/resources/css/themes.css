@@ -23,12 +23,12 @@ body[theme="midnight"] {
     --box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
 }
 body[theme="christmas"] {
-    --background: rgb(185, 0, 0);
-    --background-solo: rgb(185, 0, 0);
-    --color: rgb(20, 152, 0);
-    --text-shadow: 0 0 30px rgba(20, 152, 0, 0.7);
-    --box-shadow-semi: 0 0 10px rgba(20, 152, 0, 0.7);
-    --box-shadow: 0 0 30px rgba(20, 152, 0, 0.7);
+    --background: rgb(20, 152, 0);
+    --background-solo: rgb(20, 152, 0);
+    --color: rgb(185, 0, 0);
+    --text-shadow: 0 0 30px rgba(185, 0, 0, 0.7);
+    --box-shadow-semi: 0 0 10px rgba(185, 0, 0, 0.7);
+    --box-shadow: 0 0 30px rgba(185, 0, 0, 0.7);
 }
 body[theme="light"] {
     --background: white;
