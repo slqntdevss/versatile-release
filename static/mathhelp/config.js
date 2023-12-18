@@ -1,8 +1,3 @@
-
-if(localStorage.getItem("bare") == null) {
-  localStorage.setItem("bare", "/contactus/")
-}
-
 self.__uv$config = {
   prefix: "/versat/",
   bare: "/contactus/",
