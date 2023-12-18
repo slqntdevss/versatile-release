@@ -94,3 +94,10 @@ browserpicker.addEventListener("change", function (e) {
   if(browser != "select") {
   localStorage.setItem("browser", browser);
 }});
+const barepicker = document.getElementById("barepicker");
+
+barepicker.addEventListener("change", function (e) {
+  let bare = e.target.value;
+  if(bare != "select") {
+  localStorage.setItem("bare", bare);
+}});
