@@ -5,7 +5,7 @@ if(localStorage.getItem("bare") == null) {
 
 self.__uv$config = {
   prefix: "/versat/",
-  bare: localStorage.getItem("bare"),
+  bare: "/contactus/",
   encodeUrl: Ultraviolet.codec.xor.encode,
   decodeUrl: Ultraviolet.codec.xor.decode,
   handler: "/mathhelp/handler.js",
