@@ -92,5 +92,5 @@ const browserpicker = document.getElementById("browserpicker");
 browserpicker.addEventListener("change", function (e) {
   let browser = e.target.value;
   if(browser != "select") {
-  localStorage.setItem("browser", theme);
+  localStorage.setItem("browser", browser);
 }});

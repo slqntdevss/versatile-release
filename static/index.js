@@ -3,7 +3,7 @@ const form = document.querySelector("form");
 const input = document.querySelector("input");
 
 if(browser == null) {
-  localStorage.setItem("browser", "https://google.com/search?q=")
+  localStorage.setItem("browser", "https://duckduckgo.com/?q=")
 }
 
 form.addEventListener("submit", async (event) => {
